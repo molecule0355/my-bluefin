@@ -26,6 +26,7 @@ modules:
         #- waydroid
         - cage
         - steam
+        - docker
     #remove:
       #packages:
         # example: removing firefox (in favor of the flatpak)
