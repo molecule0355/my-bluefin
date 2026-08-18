@@ -21,8 +21,6 @@ modules:
     #repos:
       #copr:
         #- atim/starship
-      #files:
-        #- https://pkgs.netbird.io/yum/
     install:
       packages:
         #- waydroid
@@ -38,6 +36,10 @@ modules:
         #- firefox
         #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+
+  - type: script
+    snippets:
+       - "curl -fsSL https://pkgs.netbird.io/install.sh | sh" 
 
   - type: default-flatpaks
     configurations:
